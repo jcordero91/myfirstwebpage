@@ -1,268 +1,225 @@
 <!DOCTYPE html>
-<html>
-       <head>
-       	    <title>My First  Webpage</title>
-     <style>
+<html lang="en">
+   <head>
+        <link rel"stylesheet" type="text/css" href="vendors/css/normalize">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i" rel="stylesheet">
+       
+       <title>OmniFood</title>
+              
+              <style>
+       
+ 
+                  
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
      
-     body {
-        width:1100px;
-        background:#FFD1AA;
-        display: block;
-        margin: auto;
+                      
+   }
 
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'lato','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+                      
     }
-
-
+       
+ .row {
+    max-width: 1140px;
+    margin: 0 auto;
+    font-family: Arial,
    
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
-
+    
+    }  
+       
+ header {
+    background-image: url(resources/css/img/hero.jpg); 
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    
+}  
+  
 h1 {
-     	color: #AA5585;
-     	padding: 15px;
-     }
+text-shadow: 3px 2px black;
+margin: 0;
+color: indianred;
+font-size: 240%;
+text-transform: uppercase;
+letter-spacing: 1px;
+word-spacing: 4px;
+                 
+                  
+}
 
-
-    h2 {
-
-    	text-align: center;
-    	font-weight: normal;
-    	background: #AA3939;
-    	border: 10px solid white;
-    	float:left;
-    	width:29.5%;
-    	margin: 1%
-    	padding:10px;
-    	height: 100px;
-    }
-
-    h3 {
+                  
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left:50%;
+    transform: translate(-40%, -20%);
+                      
+                      
+}
        
-        text-align: center;
-        font-weight: normal;
-        background: #AA6C39;
-        border: 5px solid white;
-        float: right;
-        width: 28.5%;
-        margin: 2%;
-        padding: 10px;
-        height: 100px;
-    }
-
+ .btn:link,
+  .btn:visited                {
+     display: inline-block;
+     padding: 10px 30px;
+     font-weight: 300;
+     text-decoration: none;
+     border-radius: 200px;
+     color: #fff;
+     transition: background-color 0.2s, border 0.2s, color 0.2s;  
+}
+                  
+ .btn-full:link,
+ .btn-full:visited                {
+    background-color: #e67e22;
+    border-radius: 200px;
+    margin-right: 15px;
+                      
+  } 
+       
+.btn-ghost:link,
+.btn-ghost:link                  {
+   background-color: #e67e22;
+    border-radius: 200px;
+    margin: 20px;
+}
+       
+ .btn:hover,
+ .btn:active {
+    background-color: #cf6d17;            
+}   
+      
+                  
+       
+.logo {
+height: 100px;
+width:auto;
+float: left;
+margin-top: 20px;
     
-
-         .button {
-       	   background-color: #D49A6A;
-       	   border-radius: 50px;
-       	   color: white;
-       	   padding: 15px 32px;
-       	   text-align: center;
-       	   text-decoration: none;
-       	   display: inline-block;
-       	   font-size: 16px;
-       	   margin:4px 2px;
-       	   cursor: pointer;
-
-       	 }
-
+    
+}     
        
-        img {
-        	height: 205px;
-        	width: 185px;
-        	padding: 20px;
-        	border: 5px solid white;
-        	margin: 29px; 8px;
-        }
+ .main-nav {
+float:right;
+list-style: none;
+margin-top:55px;
+                  }
+.main-nav li {
+ display: inline-block;
+ margin-left: 40px;
 
+}
+                  
+.main-nav li a:link
+.main-nav li a:visited {
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 90%;
+                  }
 
-        img {
-        	height: :205px;
-        	width: 185px;
-        }
+                  
+.main-nav li a:hover,
+.main-nav li a:active {
+border-bottom: 2px solid #e67e22;
+}
+                  
 
-
-        .div1 {
-        	 color: black
-				text-decoration: none;
-				padding: 20px;
-				margin: 20px;
-				display: inline-block;
-				border-radius: 5px;
-				transition: all 0.3s;
-				float: left;
-        } 
-
-
-
-        .div2 {
-        	background:#D49A6A;
-         	border-radius: 50px;
-        	width: 900px;
-        	height:50px;
-        	padding: 25px;
-        	margin: 19px;
-        }
-
+            
+                  
+                  
+           
+       
+       
+</style> 
+    
+    
+     </head>
+    <body>
+        <header>
+           <nav>
+            <div class="row">
+               <img src="resources/img/logo.png" alt="Omnifood logo" class="logo">
+               <ul class="main-nav">
+                 <li><a href="#">Food delivery</a>
+                 <li><a href="#">How it works</a> 
+                 <li><a href="#">Our cities</a>
+                 <li><a href="#">Sign up</a>
+                   
+                   </li>
+                </ul>
+               </div>
+            
+            
+            
+            
+            
+        </nav>
+        <div class="hero-text-box">
+            
+            <h1>Goodbye junk food. 
+                <br>Hello super healthy meals!</b></h1>
+            <a class="btn btn-full" href="#">I’m hungry</a>
+            <a class="btn btn-ghost" href="#">show me more</a>
+            </div>
         
+        
+        
+        </header>
+    
+    <section class="section-features"
+      <div class="row"
+          <li class="ion-heart"></li>
+        <h2>Get food fast — not fast food.</h2>
+        <p class="long-copy">
+    Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+    </p>
+        
+        
+        </div>
+    
+   <div class="row">
+        <div class="col span-1-of-4">
+            <h3>Up to 365 days/year</h3>
+            <p>
+                 Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
 
-         .div3 {
-         	width: 13px;
-         	height: 33px:
-            display: inline;
-         	position: absolute;
-         	margin: auto;
+            </p>
+         </div>
+        <div class="col span-1-of-4">
+            <h3>Ready in 20 minutes</h3>
+            <p>
+                You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy 
 
-         	
-         }
+            </p>
+         </div>
+         <div class="col span-1-of-4">
+            <h3>100% organic</h3>
+            <p>
+                 All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
 
+            </p>
+         </div>
+         <div class="col span-1-of-4">
+            <h3>Order anything</h3>
+            <p>
+                 We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
 
- 
-
-         .center {
-         	 position: absolute;
-         	 border: 3px solid green;
-             margin: auto;
-         	 display: block;
-         	 height: 10px
-         	 width: 40px;
-         }
-
-         .video {
-         	width: 25px;
-         	height: auto;
-         	position: right;
-         }
-
-
-
-
-          
+            </p>
+         </div>
          
-         
-
-
-       
-
-  </style>        
-       </head>
-       <body>
-       
-
-
-<ul>
-  <li><a href="#home">documentaries</a></li>
-  <li><a href="#news">comedy</a></li>
-  <li><a href="#contact">Series</a></li>
-
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-<div2>
-
-<button class="button button4">Documentaries</button>
-
-<button class="button button3">Comedy</button>
-
-<button class="button button2">series</button>
-
-
-
-</div2>
-       
-
-
-
-        <!-- Demonstrating all the possible h-tags       -->
-
-
-
-	
-	<h1>Hello, World!</h1>
-
-	<h2>My box 1</h2>
-
-	<h3>My box2</h3>
-
-
-
-	
-
-
-
- 
-	
-     
-
-     
-
     
-     <div class="div1">
-
-     
-
-     <img alt="this is a cute cat" src="chewing_gum.jpg">
-
-     <div 3>
-     <img alt="Documentaries" src="audrie and daisy.jpg">
-     </div>
-	
-     <div class="center">
-           <p>This is my favorite comedy on netflix.</p>
-
-     </div>
-     
-
-     <div class="video">
-    
-       <video width="400" controls>
-    <source src="mov_bbb.mp4" type="video/mp4">
-    <source src="mov_bbb.ogg" type="video/ogg">
-    Your browser does not support HTML5 video.
-      </video>
-     
-    </div>
+    </body>
 
 
-    
-
-
-
-     </div>
-
-     
-
-
-          </body>
- </html>
-          
+</html>
